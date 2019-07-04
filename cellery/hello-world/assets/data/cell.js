@@ -1,0 +1,1 @@
+window.__CELL_METADATA__ = {"org":"wso2cellery","name":"hello-world-cell","ver":"0.3.0","labels":{},"dockerImages":[],"buildTimestamp":1562911406,"buildCelleryVersion":"0.3.0","ingresses":["HTTP"],"components":["hello"],"dependencies":{},"componentDep":{},"exposed":["hello"],"zeroScaling":false,"autoScaling":false};

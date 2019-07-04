@@ -24,7 +24,7 @@
         "text": "step6.md"
       },
       {
-        "title": "Push your image to Cellery Hub (Optional)",
+        "title": "Push your image to Docker Hub (Optional)",
         "text": "step7.md"
       }
     ],
@@ -40,21 +40,57 @@
     "assets": {
       "host01": [
         {
-          "file": "docs-view.sh",
-          "target": "/tmp/docs-view/"
-        },
-        {
-          "file": "setup.sh",
+          "file": "wait.sh",
           "target": "/usr/local/bin/",
           "chmod": "+x"
         },
         {
+          "file": "kube-wait.sh",
+          "target": "/usr/local/bin/",
+          "chmod": "+x"
+        },
+        {
+          "file": "app.js",
+          "target": "/root/docs-view",
+          "chmod": "+x"
+        },
+        {
+          "file": "package.json",
+          "target": "/root/docs-view",
+          "chmod": "+x"
+        },
+        {
+          "file": "favicon.ico",
+          "target": "/root/docs-view/assets",
+          "chmod": "+x"
+        },
+        {
+          "file": "style.css",
+          "target": "/root/docs-view/assets",
+          "chmod": "+x"
+        },
+        {
+          "file": "cellery-logo.svg",
+          "target": "/root/docs-view/assets",
+          "chmod": "+x"
+        },
+        {
           "file": "service-nodeport.yaml",
-          "target": "/tmp/"
+          "target": "/usr/local/bin/",
+          "chmod": "+x"
+        },
+        {
+          "file": "registry.xml",
+          "target": "/usr/tmp/is"
+        },
+        {
+          "file": "master-datasources.xml",
+          "target": "/usr/tmp/is/datasources"
         }
       ]
     }
   },
+  "files": [],
   "environment": {
     "uilayout": "editor-terminal",
     "uieditorpath": "/root/workspace",
@@ -62,15 +98,15 @@
     "dashboards": [
       {
         "name": "Web Cell",
-        "port": 8000
+        "port": 2000
       },
       {
         "name": "Docs View",
-        "href": "https://[[HOST_SUBDOMAIN]]-8080-[[KATACODA_HOST]].environments.katacoda.com"
+        "href": "https://[[HOST_SUBDOMAIN]]-9990-[[KATACODA_HOST]].environments.katacoda.com/docs"
       },
       {
         "name": "Observability",
-        "href": "https://[[HOST_SUBDOMAIN]]-9004-[[KATACODA_HOST]].environments.katacoda.com"
+        "href": "http://[[HOST_SUBDOMAIN]]-4000-[[KATACODA_HOST]].environments.katacoda.com/"
       }
     ]
   },

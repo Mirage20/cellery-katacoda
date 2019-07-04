@@ -1,0 +1,14 @@
+{
+  "main.js": "./static/js/main.cf2f935a.chunk.js",
+  "main.js.map": "./static/js/main.cf2f935a.chunk.js.map",
+  "runtime~main.js": "./static/js/runtime~main.2c977d9b.js",
+  "runtime~main.js.map": "./static/js/runtime~main.2c977d9b.js.map",
+  "static/css/2.717ddfb2.chunk.css": "./static/css/2.717ddfb2.chunk.css",
+  "static/js/2.eaef8af1.chunk.js": "./static/js/2.eaef8af1.chunk.js",
+  "static/js/2.eaef8af1.chunk.js.map": "./static/js/2.eaef8af1.chunk.js.map",
+  "index.html": "./index.html",
+  "precache-manifest.0ef90908f8520643814da41bf8fdc0a5.js": "./precache-manifest.0ef90908f8520643814da41bf8fdc0a5.js",
+  "service-worker.js": "./service-worker.js",
+  "static/css/2.717ddfb2.chunk.css.map": "./static/css/2.717ddfb2.chunk.css.map",
+  "static/media/vis-network.min.css": "./static/media/editIcon.d5422321.png"
+}

@@ -40,14 +40,9 @@ install_ballerina(){
 }
 
 install_cellery(){
-    wget --directory-prefix=${TEMP_DIR} https://github.com/wso2-cellery/sdk/releases/download/v0.3.0/cellery-ubuntu-x64-0.3.0.deb
-    sudo dpkg -i ${TEMP_DIR}/cellery-ubuntu-x64-0.3.0.deb
-}
-
-setup_doc_server(){
-    sudo apt-get install npm nodejs-legacy -y
-    npm install -g http-server
-    nohup http-server ${TEMP_DIR}/docs-view/ -p 8080 > ${TEMP_DIR}/docs-view/output.log &
+    wget --directory-prefix=${TEMP_DIR} https://wso2.org/jenkins/view/cellery/job/cellery/job/sdk/lastSuccessfulBuild/artifact/*zip*/archive.zip
+    unzip -d ${TEMP_DIR} ${TEMP_DIR}/archive.zip
+    sudo dpkg -i ${TEMP_DIR}/archive/installers/ubuntu-x64/target/*.deb
 }
 
 update_apim_host_config () {
@@ -78,9 +73,7 @@ install_ballerina
 echo "done" >> /opt/.ballerinaInstalled
 
 install_cellery
-setup_doc_server
 echo "done" >> /opt/.celleryInstalled
-
 
 
 update_apim_host_config

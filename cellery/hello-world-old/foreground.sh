@@ -1,4 +1,3 @@
-#!/bin/bash
 # ------------------------------------------------------------------------
 #
 # Copyright 2019 WSO2, Inc. (http://wso2.com)
@@ -17,8 +16,5 @@
 #
 # ------------------------------------------------------------------------
 
-export VHOST_NAME="[[HOST_SUBDOMAIN]]-8000-[[KATACODA_HOST]].environments.katacoda.com"
-
-sleep 2; setup.sh
-
-
+export VHOST_NAME="[[HOST_SUBDOMAIN]]-2000-[[KATACODA_HOST]].environments.katacoda.com"
+sleep 2; wait.sh;

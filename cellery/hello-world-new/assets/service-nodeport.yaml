@@ -31,8 +31,8 @@ spec:
     port: 9004
     targetPort: 80
     protocol: TCP
-  - name: hello-web-port
-    port: 8000
+  - name: observability-api
+    port: 9006
     targetPort: 80
     protocol: TCP
   selector:
